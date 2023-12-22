@@ -1,4 +1,4 @@
-const api ="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"
+const api ="sk-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"
 const inp = document.getElementById('inp')
 const images = document.querySelector('images')
 const getImage = async () => {
@@ -17,7 +17,9 @@ const getImage = async () => {
             }
         )
     }
-    const res = await fetch("https://api.openai.com/v1/images/edits", methods)
+    const res = await fetch("https://api.openai.com/v1/images/generations
+
+    ", methods)
     // parse the response as json 
     const data = await res.json()
     const listImages = data.data;
